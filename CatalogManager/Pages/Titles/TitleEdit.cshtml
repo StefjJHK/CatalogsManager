@@ -1,0 +1,38 @@
+﻿@page
+@model CatalogsManager.Pages.Titles.TitleEditModel
+@inject IViewLocalizer Localizer
+
+<h1>@Localizer["PageDescription"] @Model.Catalog.Kind</h1>
+
+<form method="post">
+    <div>
+        <label class="cmn-lbl-description_input" asp-for="@Model.Title.Name">@Localizer["Name"]</label>
+        <input class="form-control" asp-for="@Model.Title.Name" />
+        <span asp-validation-for="@Model.Title.Name"></span>
+    </div>
+    <div>
+        <label class="cmn-lbl-description_input" asp-for="@Model.Title.Tag">@Localizer["Tag"]</label>
+        <input class="form-control" asp-for="@Model.Title.Tag" />
+        <span asp-validation-for="@Model.Title.Tag"></span>
+    </div>
+    <div>
+        <label class="cmn-lbl-description_input" asp-for="@Model.Title.Count">@Localizer["Count"]</label>
+        <input class="form-control" asp-for="@Model.Title.Count" />
+        <span asp-validation-for="@Model.Title.Count"></span>
+    </div>
+
+    <input type="hidden" asp-for="@Model.Title.TitleId" />
+    <input type="hidden" asp-for="@Model.Catalog.CatalogId" />
+    <input type="hidden" asp-for="@Model.Catalog.Kind" />
+    <input type="hidden" asp-for="@Model.Title.CatalogId" />
+
+    <p></p>
+
+    <button type="submit" asp-page-handler="Update" class="btn btn-info">@Localizer["Edit"]</button>
+    <button asp-page-handler="Delete" class="btn btn-danger">@Localizer["Delete"]</button>
+</form>
+
+@section Scripts
+{
+    <partial name="_ValidationScriptsPartial" />
+}

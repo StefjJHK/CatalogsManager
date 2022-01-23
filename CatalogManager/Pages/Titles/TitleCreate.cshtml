@@ -1,0 +1,41 @@
+﻿@page
+@model CatalogsManager.Pages.Titles.TitleCreateModel
+@inject IViewLocalizer Localizer
+
+@{
+    var allRouteData = new Dictionary<string, string>
+    {
+        ["CatalogId"] = Model.Catalog.CatalogId.ToString(),
+        ["Kind"] = Model.Catalog.Kind.ToString()
+    };
+}
+
+<h1>@Localizer["PageDescription"] @allRouteData["Kind"]<br /></h1>
+
+<form method="post" asp-page-handler="Update" asp-all-route-data="@allRouteData">
+    <div>
+        <label class="cmn-lbl-description_input" asp-for="@Model.Title.Name">@Localizer["Name"]</label>
+        <input asp-for="@Model.Title.Name" class="form-control" />
+        <span asp-validation-for="@Model.Title.Name"></span>
+    </div>
+    <div>
+        <label class="cmn-lbl-description_input" asp-for="@Model.Title.Tag">@Localizer["Tag"]</label>
+        <input asp-for="@Model.Title.Tag" class="form-control" />
+        <span asp-validation-for="@Model.Title.Tag"></span>
+    </div>
+    <div>
+        <label class="cmn-lbl-description_input" asp-for="@Model.Title.Count">@Localizer["Count"]</label>
+        <input asp-for="@Model.Title.Count" value="1" class="form-control" />
+        <span asp-validation-for="@Model.Title.Count"></span>
+    </div>
+        
+    <input type="hidden" asp-for="@Model.Title.CatalogId" value="@Model.Catalog.CatalogId"/>
+
+    <p></p>
+    <button type="submit" class="btn btn-info">@Localizer["Add"]</button>
+</form>
+
+@section Scripts
+{
+    <partial name="_ValidationScriptsPartial" />
+}

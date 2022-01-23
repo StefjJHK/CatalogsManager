@@ -1,0 +1,53 @@
+﻿@page
+@model CatalogsManager.Pages.Groups.GroupsView
+@inject IViewLocalizer Localizer
+
+@{ 
+    var routeAllCatalogData = new Dictionary<string, string>()
+    {
+        ["CatalogId"] = Model.Catalog.CatalogId.ToString(),
+        ["Kind"] = Model.Catalog.Kind,
+    };
+}
+
+<h1>@Localizer["PageDescription"] @Model.Catalog.Kind</h1>
+<ul class="cmn-list-style">
+    @foreach (var titlesGroup in Model.TitlesGroups)
+    {
+        <li style="list-style:none">
+            <p class="cmn-item-discription-list">@titlesGroup.LexicographicalSign</p>
+
+            @foreach (var title in titlesGroup.Titles)
+            {
+                var routeAllData = new Dictionary<string, string>()
+                {
+                    ["CatalogId"] = Model.Catalog.CatalogId.ToString(),
+                    ["Kind"] = Model.Catalog.Kind,
+                    ["TitleId"] = title.TitleId.ToString(),
+                    ["Name"] = title.Name,
+                    ["Tag"] = title.Tag,
+                    ["Count"] = title.Count.ToString(),
+                };
+
+                <div class="d-flex justify-content-between list-group-item list-group-centre">
+                    <div class="cmn-text-style_list-parent">
+                        <p class="cmn-text-style-list-inner">@($"{title.Name} - {title.Tag}({title.Count})")</p>
+                    </div>
+
+                   @if (User.Identity.IsAuthenticated)
+                   {
+                    <div class="cmn-link-style-list-parent">
+                        <a class="btn btn-info" asp-page="/Titles/TitleEdit" asp-all-route-data="@routeAllData">@Localizer["Edit"]</a>
+                    </div>
+                   }
+                </div>
+            }
+        </li>
+    }
+</ul>
+
+@if (User.Identity.IsAuthenticated)
+{
+    <a class="btn btn-info cmn-btn-bottom_button cmn-item-bottom_item" 
+        asp-page="/Titles/TitleCreate" asp-all-route-data="@routeAllCatalogData">@Localizer["Add"]</a>
+}

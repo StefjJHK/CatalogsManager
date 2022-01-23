@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Этот файл используется процессом публикации или упаковки вашего веб-проекта. Можно настроить поведение этого процесса,
+изменив этот файл MSBuild. Подробности см. на странице https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAAmWDfPmO6Ey1rsuCBIuCgwAAAAACAAAAAAAQZgAAAAEAACAAAADF9MhwKGs8X6dobhJ+KfqQOuD084YkfUJ6S6mIFi/a1gAAAAAOgAAAAAIAACAAAABCBypitymU5UQne/sBSOM9LCZEqEk3ewh/abRxM+jjqIAAAAD4YE7gyiW2YGJS+AcIfRxUsz3dpAJesyZzoJSR0e+kxmDNk9DtCVGbLh4S15l9u/NWz6m1wewWLuthuIYT22q2mqt6FYSxdA186rRDQLLAkQaJBB5ihdwJMl7gTA9wJ1r2BmKdtv6KeiU8uZPuj5Fp1qms+Df6fxcHWsugetZu70AAAAC0qKUUP+/7FmkZjhqVRW1dYDTqIqgNOCaCNHxQFAguLFTucDig8yZ9GztAxy1TzW7jE4PoXoQM6PuZvBtyFrYf</EncryptedPassword>
+    <History>True|2022-01-23T11:02:52.7633449Z;True|2022-01-23T13:55:59.2232312+03:00;True|2022-01-23T13:44:43.9478659+03:00;True|2022-01-23T13:33:09.6666679+03:00;True|2022-01-23T13:24:57.7628306+03:00;True|2022-01-23T13:21:24.0040245+03:00;True|2022-01-22T23:45:29.0731039+03:00;</History>
+  </PropertyGroup>
+</Project>

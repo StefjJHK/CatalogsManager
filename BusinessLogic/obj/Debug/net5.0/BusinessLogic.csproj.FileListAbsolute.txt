@@ -1,0 +1,12 @@
+E:\My projects\VisualStudio\InProgress\CatalogsManager\BusinessLogic\bin\Debug\net5.0\BusinessLogic.deps.json
+E:\My projects\VisualStudio\InProgress\CatalogsManager\BusinessLogic\bin\Debug\net5.0\BusinessLogic.dll
+E:\My projects\VisualStudio\InProgress\CatalogsManager\BusinessLogic\bin\Debug\net5.0\ref\BusinessLogic.dll
+E:\My projects\VisualStudio\InProgress\CatalogsManager\BusinessLogic\bin\Debug\net5.0\BusinessLogic.pdb
+E:\My projects\VisualStudio\InProgress\CatalogsManager\BusinessLogic\obj\Debug\net5.0\BusinessLogic.csproj.AssemblyReference.cache
+E:\My projects\VisualStudio\InProgress\CatalogsManager\BusinessLogic\obj\Debug\net5.0\BusinessLogic.GeneratedMSBuildEditorConfig.editorconfig
+E:\My projects\VisualStudio\InProgress\CatalogsManager\BusinessLogic\obj\Debug\net5.0\BusinessLogic.AssemblyInfoInputs.cache
+E:\My projects\VisualStudio\InProgress\CatalogsManager\BusinessLogic\obj\Debug\net5.0\BusinessLogic.AssemblyInfo.cs
+E:\My projects\VisualStudio\InProgress\CatalogsManager\BusinessLogic\obj\Debug\net5.0\BusinessLogic.csproj.CoreCompileInputs.cache
+E:\My projects\VisualStudio\InProgress\CatalogsManager\BusinessLogic\obj\Debug\net5.0\BusinessLogic.dll
+E:\My projects\VisualStudio\InProgress\CatalogsManager\BusinessLogic\obj\Debug\net5.0\ref\BusinessLogic.dll
+E:\My projects\VisualStudio\InProgress\CatalogsManager\BusinessLogic\obj\Debug\net5.0\BusinessLogic.pdb

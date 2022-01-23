@@ -1,0 +1,27 @@
+﻿@page
+@model RegisterModel
+@using Microsoft.AspNetCore.Mvc.Localization
+
+@inject IViewLocalizer Localizer
+
+<h1>@Localizer["Title"]</h1>
+<div class="col-md-6 col-md-offset-2">
+    <section>
+        <h4>@Localizer["Description"]</h4>
+        <hr />
+        @{
+            <form id="external-account" asp-page="./ExternalLogin" asp-route-returnUrl="@Model.ReturnUrl" method="post" class="form-horizontal">
+                <p>
+                    @foreach (var provider in Model.ExternalLogins)
+                    {
+                        <button type="submit" class="btn btn-primary" name="provider" value="@provider.Name" title="@Localizer["BtnMessage"] @provider.DisplayName">@provider.DisplayName</button>
+                    }
+                </p>
+            </form>
+        }
+    </section>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

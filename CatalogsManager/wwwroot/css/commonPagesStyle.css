@@ -1,0 +1,55 @@
+﻿h1.cmn-h_1 {
+    word-break: keep-all;
+    font-weight: 600;
+}
+
+label.cmn-lbl-description_input {
+    font-weight: 500;
+}
+
+button.cmn-btn-action {
+    word-break: normal;
+    display: inline;
+}
+
+div.group-action-buttons {
+    display: inline-flex;
+}
+
+ul.cmn-list-style {
+
+}
+
+.cmn-text-style_list-parent {
+    display: flex;
+    overflow: auto;
+    height: 42px;
+    max-height: 42px;
+    line-height: 19px;
+    margin-right: 10px;
+}
+
+.cmn-text-style-list-inner {
+    text-align: justify;
+    word-break: break-all;
+    margin: auto;
+    font-size: 18px;
+    padding-right: 5px;
+}
+
+.cmn-link-style-list-parent {
+    margin: auto;
+    margin-right: 0;
+}
+
+.cmn-item-bottom_item {
+    margin: 15px 0 0 0
+}
+
+.cmn-item-discription-list {
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 10px 0 2px 5px;
+}
